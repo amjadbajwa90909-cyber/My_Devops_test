@@ -1,1 +1,12 @@
-here is supposd the be the yaml file.
+name: Test CI/CD Setup
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  check-setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello
+        run: echo "🎉 CI/CD pipeline is working successfully!"
